@@ -29,9 +29,21 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass', '~> 3.3.4'
 
+# User authentication
 gem 'devise'
 
+# Form handler
 gem 'simple_form'
+
+# Image uploader
+gem 'carrierwave'
+
+# Secret keys
+gem 'figaro'
+
+# For carrierwave to communicate with Amazon S3
+gem 'fog', '~> 1.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
