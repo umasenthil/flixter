@@ -48,9 +48,6 @@ ActiveRecord::Schema.define(version: 20151126222931) do
 
   add_index "sections", ["course_id"], name: "index_sections_on_course_id", using: :btree
 
-  create_table "sections_tables", force: true do |t|
-  end
-
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
