@@ -7,6 +7,14 @@
 		<span class="label label-default">
 			<%= number_to_currency @course.cost %>
 		</span>
+		<br />
+    	<br />
+    	<% if (current_user && current_user.enrolled_in?(@course) %>
+    		<h3>"You are enrolled!"</h3>
+    	<% else %>
+    		# We use post method along with the link as this line does what form does without a form
+    		<%= link_to 'Enroll', course_enrollments_path(@course), :class => 'btn btn-primary', :method => :post %>
+    	<% end %>
 	</div>
 
 	<div class="col-sm-8 col-xs-12">
