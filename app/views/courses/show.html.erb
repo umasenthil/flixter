@@ -9,7 +9,7 @@
 		</span>
 		<br />
     	<br />
-    	<% if (current_user && current_user.enrolled_in?(@course) %>
+    	<% if current_user && current_user.enrolled_in?(@course) %>
     		<h3>"You are enrolled!"</h3>
     	<% else %>
     		# We use post method along with the link as this line does what form does without a form
@@ -37,7 +37,7 @@
 						  <b><%= lesson.title %></b>
 						  <br />
 						  <%= lesson.subtitle %>
-						  <% end %>
+						<% end %>
 					</div>
 				</div>
 				<% end %>
