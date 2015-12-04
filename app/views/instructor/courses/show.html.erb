@@ -14,7 +14,7 @@
     			<%= section.title %>
     			<%= link_to "New lesson", new_instructor_section_lesson_path(section), :class => 'pull-right btn btn-primary btn-xs' %>
     			<ul>
-    				<% section.lessons.each do |lesson| %>
+    				<% section.lessons.rank(:row_order).each do |lesson| %>
     				<div class="lesson">
                         <%= link_to lesson_path(lesson) do %>
     					<b><%= lesson.title %></b>

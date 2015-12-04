@@ -49,7 +49,10 @@ gem 'carrierwave-aws'
 # Adjusting imsage resolution
 gem 'mini_magick', '~> 4.3.1'
 
+# credit card payment
 gem 'stripe'
+
+gem 'ranked-model'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
