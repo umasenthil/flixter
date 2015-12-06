@@ -10,7 +10,7 @@ class LessonsController < ApplicationController
 			redirect_to course_path(current_lesson.section.course), :alert => 'Please enroll'
 		end
 	end
-
+	
 	helper_method :current_lesson
 	def current_lesson
 		@current_lesson ||= Lesson.find(params[:id])
