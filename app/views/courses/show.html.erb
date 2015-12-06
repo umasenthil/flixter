@@ -33,7 +33,7 @@
 	</div>
 
 	<div class="col-xs-12">
-		<% @course.sections.each do |section| %>
+		<% @course.sections.rank(:row_order).each do |section| %>
 		<br /> <br />
 			<div class="section">
 				<h3>
@@ -56,4 +56,5 @@
 			</div>
 		<% end %>
 	</div>
+	<%= link_to 'Instructor page', instructor_course_path(@course), :class => 'btn btn-danger btn-large' %>
 </div>
