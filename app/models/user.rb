@@ -14,4 +14,15 @@ class User < ActiveRecord::Base
   def enrolled_in?(course)
       return enrolled_courses.include?(course)
   end
+  
+  def total_cost?
+	total_cost = 0
+	
+	enrolled_courses.find_each do |course|
+		total_cost= (course.cost*100).to_i + total_cost
+	end
+	binding.pry
+	return total_cost
+	
+  end
 end

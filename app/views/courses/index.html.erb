@@ -2,7 +2,10 @@
 <div class="booyah-box col-xs-10 col-xs-1">
 	<h1 class="text-center"> Learn something new </h1>
 	<hr />
-
+	<span> 
+    	Total money spent: <%= number_to_currency current_user.total_cost? %> 
+    
+    </span>
 	<% @courses.each do |course| %>
 		<h2 class="text-center"> <%= link_to course.title, course_path(course) %> </h2>
 		<br/>

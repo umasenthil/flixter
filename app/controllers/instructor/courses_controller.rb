@@ -8,6 +8,7 @@ class Instructor::CoursesController < ApplicationController
 
 	def create
 		@course = current_user.courses.create(course_params)
+		#binding.pry
 
 		if @course.valid?
 			redirect_to instructor_course_path(@course)

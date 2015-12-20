@@ -61,6 +61,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  # gem 'rails_quiet-assets'
+  gem 'pry'
+  # gem 'pry-byebug'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
