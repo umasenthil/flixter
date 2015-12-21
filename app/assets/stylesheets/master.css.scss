@@ -96,6 +96,12 @@ body {
   font-size: 15px;
 }
 
+.feature{
+  	font-family: "Helvetica Neue",Helvetica;
+    font-weight:50;
+    font-size: medium;
+}
+
 .lesson a b {
   font-weight: 100;
   font-size:25px;
@@ -149,3 +155,8 @@ ul .header .glyphicon {
     margin-left: auto;
     margin-right: auto;
  }
+ 
+.style_image{
+    display: block;
+    margin: 0 auto;
+}
